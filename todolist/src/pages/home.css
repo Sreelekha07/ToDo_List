@@ -1,0 +1,255 @@
+.home-container {
+  width: 90%;
+  margin: auto;
+}
+.home-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+.new-class-btn {
+  padding: 10px;
+  margin: 8px;
+  display: flex;
+  gap: 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgb(169, 71, 197);
+  border: 0;
+  color: whitesmoke;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+.new-class-btn:active {
+  transform: scale(0.25);
+}
+
+.header-logo-text {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: rgb(169, 71, 197);
+}
+header {
+  padding: 20px 0;
+}
+.btn-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.search-bar {
+  display: block;
+  padding: 15px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 0px;
+  border: 1px solid gainsboro;
+  outline-color: rgb(163, 96, 208);
+  transition: all 0.3s ease-in-out;
+}
+.search-icon {
+  color: rgb(180, 173, 173);
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  display: flex;
+  border-radius: 20px;
+  background-color: white;
+  justify-content: right;
+  align-items: center;
+  padding-right: 10px;
+}
+.search-container {
+  margin: 20px auto;
+  /* border: 2px solid black; */
+  position: relative;
+}
+.filter-container {
+  display: flex;
+  justify-content: start;
+  min-height: 100px;
+}
+.filter-btn-container {
+  flex: 1;
+}
+.filter-btn-container > button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 15px;
+  background-color: white;
+  border: 0;
+}
+.filter-btn-container > button:hover {
+  border-radius: 20px;
+  border: 2px solid rgb(163, 96, 208);
+}
+.filter-btn-container > .active-filter {
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(169, 71, 197);
+}
+.filter-btn-container > button > h3,
+.filter-btn-container > button > p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.filter-btn-container > button > p {
+  aspect-ratio: 1;
+  background-color: rgb(247, 243, 243);
+  border-radius: 50%;
+  padding: 10px;
+  margin: 10px;
+  min-width: 30px;
+  min-height: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.active-filter-value{
+  color: black;
+}
+.todo-main-container {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  overflow-y: scroll;
+  max-height: 500px;
+}
+.todo-card {
+  padding: 30px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.checkbox {
+  border: 2px solid gainsboro;
+  width: 30px;
+  height: 30px;
+  aspect-ratio: 1;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.checkbox-active{
+  border: 2px solid black;
+  width: 30px;
+  height: 30px;
+  aspect-ratio: 1;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.todo-content-container {
+  width: 100%;
+}
+.todo-title {
+  color: rgb(179, 78, 200);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 10px;
+}
+.completed-todo-title{
+  text-decoration:line-through;
+  text-decoration-color: black;
+}
+.icon-container {
+  display: flex;
+  gap: 10px;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.archive:hover {
+  color: brown;
+}
+.edit:hover {
+  color: blue;
+}
+.delete:hover {
+  color: red;
+}
+.add-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.add-task-container {
+  position: fixed;
+  z-index: 150;
+  background-color: white;
+  width: min-content;
+  height: min-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);  /* to bring container at centre of page using transform  */
+}
+.add-task-contents {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 28px;
+}
+.add-task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+.add-task-form > input,
+.add-task-form > textarea,
+.add-task-form > button {
+  font-size: 16px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid gainsboro;
+  outline-color: rgb(163, 96, 208);
+}
+.add-task-form > button{
+  outline: none;
+  background-color: rgb(169, 71, 197);
+  border: 0;
+  color: whitesmoke;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-weight: bold;
+}
+.add-task-form > button:active{
+  transform: scale(0.95);
+}
+.todo-card-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.todo-card-desc {
+  margin-top: 5px;
+}
+@media (min-width: 768px) {
+  .home-header-container {
+    width: 80%;
+  }
+  .header-logo-text {
+    font-size: 40px;
+  }
+  .new-class-btn {
+    padding: 12px;
+    font-size: 22px;
+  }
+}
